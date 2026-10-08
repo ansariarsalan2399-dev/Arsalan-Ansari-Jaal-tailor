@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARSALAN ANSARI - JAAL TAILOR | Premium Tailoring Garden West, Karachi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#FFF7D6',
+                            300: '#FCE082',
+                            400: '#FAD02C',
+                            500: '#D4AF37',
+                            600: '#AA820A',
+                            700: '#856404',
+                        },
+                        obsidian: '#0B0C10',
+                        charcoal: '#12141C',
+                        surface: '#1A1D28'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #08090C;
+            color: #E2E8F0;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF0BD 0%, #D4AF37 50%, #997A15 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-gradient {
+            border-image: linear-gradient(to bottom right, #D4AF37, #332800) 1;
+        }
+
+        .glass-card {
+            background: rgba(18, 20, 28, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 15px 35px -5px rgba(212, 175, 55, 0.15);
+        }
+
+        .hero-bg {
+            background: radial-gradient(circle at 50% 30%, rgba(212, 175, 55, 0.08) 0%, rgba(8, 9, 12, 0.95) 70%),
+                        url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1920&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .gold-btn {
+            background: linear-gradient(135deg, #D4AF37 0%, #AA820A 100%);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.25);
+        }
+
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #EAD068 0%, #C49813 100%);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .highlight-banner {
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(7, 8, 12, 0.8), rgba(7, 8, 12, 0.78)),
+                        url('https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1600&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.12);
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+        }
+
+        .highlight-banner::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.12) 30%, rgba(0,0,0,0.8) 100%);
+            pointer-events: none;
+        }
+
+        .highlight-item {
+            position: relative;
+            z-index: 1;
+            padding: 2rem 1rem 1.5rem;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .whatsapp-btn {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            box-shadow: 0 6px 22px rgba(37, 211, 102, 0.5);
+            transform: translateY(-2px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #08090C;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2A2E3D;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- HEADER NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-black/60 backdrop-blur-md border-b border-gold-500/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo / Name -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full border border-gold-500/40 flex items-center justify-center bg-gold-500/5 group-hover:border-gold-500 transition-colors">
+                        <i class="fa-solid fa-scissors text-gold-400 text-sm transform -rotate-45 group-hover:rotate-0 transition-transform duration-300"></i>
+                    </div>
+                    <div>
+                        <span class="font-cinzel text-lg sm:text-xl font-bold tracking-wider gold-gradient-text block">ARSALAN ANSARI</span>
+                        <span class="text-[10px] tracking-[0.25em] text-gray-400 uppercase font-medium block">Jaal Tailor • Garden West</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                    <a href="#about" class="text-gray-300 hover:text-gold-400 transition-colors">About Us</a>
+                    <a href="#services" class="text-gray-300 hover:text-gold-400 transition-colors">Services</a>
+                    <a href="#rates" class="text-gray-300 hover:text-gold-400 transition-colors">Stitching Rates</a>
+                    <a href="#gallery" class="text-gray-300 hover:text-gold-400 transition-colors">Craftsmanship</a>
+                    <a href="#contact" class="text-gray-300 hover:text-gold-400 transition-colors">Location</a>
+                </nav>
+
+                <!-- Header CTA -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/923142387881?text=Assalam%20o%20Alaikum,%20I%20want%20to%20inquire%20about%20stitching%20services" target="_blank" class="whatsapp-btn text-white text-xs uppercase tracking-wider font-semibold px-4 py-2.5 rounded-full flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp Order</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-gold-400 p-2 focus:outline-none" aria-label="Toggle Menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-xl border-b border-gold-500/20 px-4 pt-4 pb-6 space-y-3">
+            <a href="#about" class="block text-gray-300 hover:text-gold-400 py-2 border-b border-gray-800">About Us</a>
+            <a href="#services" class="block text-gray-300 hover:text-gold-400 py-2 border-b border-gray-800">Services</a>
+            <a href="#rates" class="block text-gray-300 hover:text-gold-400 py-2 border-b border-gray-800">Stitching Rates</a>
+            <a href="#gallery" class="block text-gray-300 hover:text-gold-400 py-2 border-b border-gray-800">Craftsmanship</a>
+            <a href="#contact" class="block text-gray-300 hover:text-gold-400 py-2">Location</a>
+            <a href="https://wa.me/923142387881?text=Assalam%20o%20Alaikum,%20I%20want%20to%20inquire%20about%20stitching%20services" target="_blank" class="whatsapp-btn w-full text-white text-sm uppercase tracking-wider font-semibold py-3 rounded-xl flex items-center justify-center gap-2 mt-4">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Order via WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg relative min-h-[72vh] flex items-center pt-20 pb-8 px-4 sm:px-6 lg:px-8">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-obsidian pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center relative z-10 space-y-8 my-auto">
+            
+            <!-- Location Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold-500/30 bg-gold-500/10 backdrop-blur-md">
+                <i class="fa-solid fa-location-dot text-gold-400 text-xs"></i>
+                <span class="text-xs font-semibold uppercase tracking-widest text-gold-300">GARDEN WEST • KARACHI</span>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <div class="space-y-4">
+                <div class="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-10">
+                    <div class="text-center md:text-left">
+                        <h1 class="font-cinzel text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight">
+                            ARSALAN ANSARI
+                        </h1>
+                        <div class="flex items-center justify-center gap-4 md:justify-start">
+                            <span class="h-[1px] w-12 sm:w-20 bg-gradient-to-r from-transparent to-gold-500 md:from-gold-500"></span>
+                            <p class="font-serif italic text-2xl sm:text-3xl text-gold-400 font-normal">Jaal Tailor</p>
+                            <span class="h-[1px] w-12 sm:w-20 bg-gradient-to-l from-transparent to-gold-500 md:to-transparent"></span>
+                        </div>
+                    </div>
+                    <div class="w-36 h-36 sm:w-44 sm:h-44 shrink-0 overflow-hidden rounded-full border-2 border-gold-400/70 ring-4 ring-gold-500/10 shadow-2xl shadow-gold-500/20">
+                        <img src="images/arsalan-profile.png" alt="Arsalan Ansari" class="w-full h-full object-cover object-[55%_45%] scale-[1.6] translate-y-3">
+                    </div>
+                </div>
+            </div>
+
+            <p class="max-w-2xl mx-auto text-gray-300 text-sm sm:text-base leading-relaxed font-light">
+                Exquisite bespoke tailoring tailored for timeless grace. Specializing in high-end simple suits, delicate dori & piping accents, luxury lining suits, and opulent bridal attire in Garden West, Karachi.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="https://wa.me/923142387881?text=Assalam%20o%20Alaikum,%20I%20want%20to%20book%20a%20stitching%20order" target="_blank" class="whatsapp-btn w-full sm:w-auto px-8 py-4 rounded-full text-white font-medium text-sm uppercase tracking-wider flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>WhatsApp Par Order Karein</span>
+                </a>
+
+                <a href="#rates" class="w-full sm:w-auto px-8 py-4 rounded-full border border-gold-500/40 text-gold-300 hover:text-white hover:border-gold-400 hover:bg-gold-500/10 transition-all font-medium text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-tag text-xs text-gold-400"></i>
+                    <span>Rates Dekhein</span>
+                </a>
+            </div>
+
+            <!-- Highlight Stats -->
+            <div class="highlight-banner mt-8 grid grid-cols-2 md:grid-cols-4 max-w-6xl mx-auto rounded-none overflow-hidden">
+                <div class="highlight-item text-center md:text-left">
+                    <div class="font-cinzel text-4xl sm:text-6xl font-bold gold-gradient-text leading-none">100%</div>
+                    <div class="text-xs sm:text-sm text-gray-300 uppercase tracking-[0.22em] mt-4">Perfect Fitting</div>
+                </div>
+                <div class="highlight-item text-center md:text-left">
+                    <div class="font-cinzel text-4xl sm:text-6xl font-bold gold-gradient-text leading-none">Premium</div>
+                    <div class="text-xs sm:text-sm text-gray-300 uppercase tracking-[0.22em] mt-4">Neat Finishing</div>
+                </div>
+                <div class="highlight-item text-center md:text-left">
+                    <div class="font-cinzel text-4xl sm:text-6xl font-bold gold-gradient-text leading-none">Bridal</div>
+                    <div class="text-xs sm:text-sm text-gray-300 uppercase tracking-[0.22em] mt-4">Master Specialists</div>
+                </div>
+                <div class="highlight-item text-center md:text-left">
+                    <div class="font-cinzel text-4xl sm:text-6xl font-bold gold-gradient-text leading-none">Fast</div>
+                    <div class="text-xs sm:text-sm text-gray-300 uppercase tracking-[0.22em] mt-4">On-Time Delivery</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 bg-obsidian">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400 block mb-2">Our Work</span>
+                <h2 class="font-cinzel text-5xl sm:text-7xl font-bold text-white leading-none">Master Tailoring</h2>
+                <div class="w-16 h-0.5 bg-gold-500 mx-auto mt-5 mb-0"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="images/dori-piping.png" alt="Dori and piping suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="text-xs text-gold-400 font-semibold tracking-widest uppercase">Dori / Piping</span>
+                            <h3 class="font-cinzel text-lg font-bold text-white">Dori Piping Suit</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="images/fancy-bridal.png" alt="Fancy bridal suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="text-xs text-gold-400 font-semibold tracking-widest uppercase">Fancy Bridal</span>
+                            <h3 class="font-cinzel text-lg font-bold text-white">Fancy Bridal Suit</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="images/simple-suit.png" alt="Simple suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="text-xs text-gold-400 font-semibold tracking-widest uppercase">Simple Suit</span>
+                            <h3 class="font-cinzel text-lg font-bold text-white">Flawless Simple Suit Stitching</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="images/lining-suit.png" alt="Lining suit" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-4 left-4 right-4">
+                            <span class="text-xs text-gold-400 font-semibold tracking-widest uppercase">Lining Suit</span>
+                            <h3 class="font-cinzel text-lg font-bold text-white">Lining Suit Stitching</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="pt-16 pb-24 px-4 sm:px-6 lg:px-8 relative bg-obsidian">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400 block mb-2">Exclusive Stitching</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">Hamari Services</h2>
+                <div class="w-16 h-0.5 bg-gold-500 mx-auto mt-4 mb-4"></div>
+                <p class="text-gray-400 text-sm sm:text-base">
+                    Classic ladies suit stitching with precision detailing, neat piping, and flawless couture silhouettes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Service 1: Simple Suit -->
+                <div class="glass-card rounded-2xl p-8 text-center flex flex-col justify-between transition-all duration-300 group">
+                    <div>
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-black transition-all duration-300 text-gold-400">
+                            <i class="fa-solid fa-shirt text-2xl"></i>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-3 group-hover:text-gold-300 transition-colors">Simple Suit</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Classic ladies suit stitching with neat finishing, comfortable armhole cut, and crisp neckline shaping.
+                        </p>
+                    </div>
+                    <button onclick="openBookingModal('Simple Suit')" class="w-full py-2.5 rounded-xl border border-gold-500/30 text-gold-300 text-xs font-semibold tracking-wider uppercase hover:bg-gold-500 hover:text-black transition-all">
+                        Inquire Now
+                    </button>
+                </div>
+
+                <!-- Service 2: Dori / Piping -->
+                <div class="glass-card rounded-2xl p-8 text-center flex flex-col justify-between transition-all duration-300 group">
+                    <div>
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-black transition-all duration-300 text-gold-400">
+                            <i class="fa-solid fa-ribbon text-2xl"></i>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-3 group-hover:text-gold-300 transition-colors">Dori / Piping</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Neat dori piping & designer lace work tailored precisely for elegant border outlines and slits detailing.
+                        </p>
+                    </div>
+                    <button onclick="openBookingModal('Dori / Piping Suit')" class="w-full py-2.5 rounded-xl border border-gold-500/30 text-gold-300 text-xs font-semibold tracking-wider uppercase hover:bg-gold-500 hover:text-black transition-all">
+                        Inquire Now
+                    </button>
+                </div>
+
+                <!-- Service 3: Lining Suit -->
+                <div class="glass-card rounded-2xl p-8 text-center flex flex-col justify-between transition-all duration-300 group">
+                    <div>
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-black transition-all duration-300 text-gold-400">
+                            <i class="fa-solid fa-layer-group text-2xl"></i>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-3 group-hover:text-gold-300 transition-colors">Lining Suit</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Inner silk/cotton lining attachment for chiffon, net, and delicate fabrics for maximum comfort and structure.
+                        </p>
+                    </div>
+                    <button onclick="openBookingModal('Lining Suit')" class="w-full py-2.5 rounded-xl border border-gold-500/30 text-gold-300 text-xs font-semibold tracking-wider uppercase hover:bg-gold-500 hover:text-black transition-all">
+                        Inquire Now
+                    </button>
+                </div>
+
+                <!-- Service 4: Bridal Suit -->
+                <div class="glass-card rounded-2xl p-8 text-center flex flex-col justify-between transition-all duration-300 group border-gold-500/40 relative overflow-hidden">
+                    <div class="absolute -top-12 -right-12 w-24 h-24 bg-gold-500/20 rounded-full blur-xl"></div>
+                    <div>
+                        <div class="w-16 h-16 mx-auto rounded-2xl bg-gold-500/20 border border-gold-500 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-gold-500 group-hover:text-black transition-all duration-300 text-gold-300">
+                            <i class="fa-solid fa-gem text-2xl"></i>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white mb-3 group-hover:text-gold-300 transition-colors">Bridal Suit</h3>
+                        <p class="text-gray-400 text-xs leading-relaxed mb-6">
+                            Heavy couture bridal wear, Sharara, Lehenga & Maxi fitting crafted with majestic royal finishing.
+                        </p>
+                    </div>
+                    <button onclick="openBookingModal('Bridal Wear')" class="w-full py-2.5 rounded-xl gold-btn text-black font-semibold text-xs tracking-wider uppercase">
+                        Book Bridal Suit
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RATES SECTION -->
+    <section id="rates" class="py-24 px-4 sm:px-6 lg:px-8 bg-charcoal relative">
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400 block mb-2">Transparent Pricing</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">Stitching Rates</h2>
+                <div class="w-16 h-0.5 bg-gold-500 mx-auto mt-4 mb-4"></div>
+                <p class="text-gray-400 text-sm">Quality stitching tailored to your budget with unmatched perfection.</p>
+            </div>
+
+            <!-- Rates Table Container -->
+            <div class="glass-card rounded-2xl overflow-hidden border border-gold-500/20">
+                <div class="p-6 sm:p-8 space-y-6">
+                    
+                    <!-- Rate Item 1 -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-gray-800 gap-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-cinzel font-bold text-lg text-white">Simple 2-Piece / 3-Piece Suit</h4>
+                                <p class="text-xs text-gray-400 mt-1">Kameez Shalwar / Trouser with clean simple stitching.</p>
+                            </div>
+                        </div>
+                        <div class="text-right flex items-center justify-between sm:justify-end gap-6">
+                            <div>
+                                <span class="text-xs text-gray-400 block">Price range</span>
+                                <span class="font-cinzel text-xl font-bold text-gold-300">Rs. 800 - 1,000</span>
+                            </div>
+                            <button onclick="openBookingModal('Simple Suit (Rs. 800-1000)')" class="p-2 rounded-lg bg-gold-500/10 hover:bg-gold-500 text-gold-400 hover:text-black transition-colors">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Rate Item 2 -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-gray-800 gap-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-cinzel font-bold text-lg text-white">Suit with Dori & Lace Attachment</h4>
+                                <p class="text-xs text-gray-400 mt-1">Custom piping, luxury neck design & stylish lace bordering.</p>
+                            </div>
+                        </div>
+                        <div class="text-right flex items-center justify-between sm:justify-end gap-6">
+                            <div>
+                                <span class="text-xs text-gray-400 block">Price range</span>
+                                <span class="font-cinzel text-xl font-bold text-gold-300">Rs. 1,200 - 1,500</span>
+                            </div>
+                            <button onclick="openBookingModal('Dori / Piping Suit (Rs. 1200-1500)')" class="p-2 rounded-lg bg-gold-500/10 hover:bg-gold-500 text-gold-400 hover:text-black transition-colors">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Rate Item 3 -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-gray-800 gap-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-vest"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-cinzel font-bold text-lg text-white">Lining Suit (Astar Stitching)</h4>
+                                <p class="text-xs text-gray-400 mt-1">Silk or shamooz inner attached with flawless fitting.</p>
+                            </div>
+                        </div>
+                        <div class="text-right flex items-center justify-between sm:justify-end gap-6">
+                            <div>
+                                <span class="text-xs text-gray-400 block">Price range</span>
+                                <span class="font-cinzel text-xl font-bold text-gold-300">Rs. 2,200 - 2,500</span>
+                            </div>
+                            <button onclick="openBookingModal('Lining Suit (Rs. 2200-2500)')" class="p-2 rounded-lg bg-gold-500/10 hover:bg-gold-500 text-gold-400 hover:text-black transition-colors">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Rate Item 4 -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-crown"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-cinzel font-bold text-lg text-white">Fancy / Heavy Bridal Wear</h4>
+                                <p class="text-xs text-gray-400 mt-1">Maxi, Lehnga, Sharara, and intricate formal occasion wear.</p>
+                            </div>
+                        </div>
+                        <div class="text-right flex items-center justify-between sm:justify-end gap-6">
+                            <div>
+                                <span class="text-xs text-gray-400 block">Price range</span>
+                                <span class="font-cinzel text-xl font-bold text-gold-300">Rs. 3,000 - 4,000</span>
+                            </div>
+                            <button onclick="openBookingModal('Fancy Bridal Wear (Rs. 3000-4000)')" class="p-2 rounded-lg bg-gold-500/10 hover:bg-gold-500 text-gold-400 hover:text-black transition-colors">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-gold-500/10 p-4 text-center border-t border-gold-500/20">
+                    <p class="text-xs text-gold-300 font-medium">
+                        * Note: Final rates may vary based on design complexity, fabric type, and embellishments.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT & LOCATION SECTION -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-charcoal border-t border-gold-500/10 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400 block mb-2">Visit Our Shop</span>
+                        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">Arsalan Ansari - Jaal Tailor</h2>
+                        <p class="text-gray-400 text-sm mt-3">Visit our shop in Garden West for custom measurements & stitching consultations.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <i class="fa-solid fa-location-dot text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-cinzel text-white font-bold">Address</h4>
+                                <p class="text-gray-400 text-xs sm:text-sm">Garden West, Karachi, Sindh, Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <i class="fa-brands fa-whatsapp text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-cinzel text-white font-bold">WhatsApp Booking</h4>
+                                <p class="text-gray-400 text-xs sm:text-sm">Instant Order & Inquiries via WhatsApp</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-cinzel text-white font-bold">Working Hours</h4>
+                                <p class="text-gray-400 text-xs sm:text-sm">Monday - Saturday: 12:00 PM - 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://wa.me/923142387881?text=Assalam%20o%20Alaikum,%20I%20want%20to%20visit%20your%20shop" target="_blank" class="whatsapp-btn text-white text-sm uppercase tracking-wider font-semibold px-8 py-4 rounded-full inline-flex items-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Contact on WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Map Placeholder Card -->
+                <div class="glass-card p-4 rounded-3xl border border-gold-500/20">
+                    <div class="w-full h-80 rounded-2xl bg-surface relative overflow-hidden flex flex-col items-center justify-center text-center p-6 border border-gold-500/10">
+                        <div class="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4 animate-bounce">
+                            <i class="fa-solid fa-map-pin text-2xl"></i>
+                        </div>
+                        <h3 class="font-cinzel text-xl font-bold text-white">Garden West, Karachi</h3>
+                        <p class="text-gray-400 text-xs mt-2 max-w-xs">Located conveniently in Garden West area for easy access and home pickup options.</p>
+                        <a href="https://maps.google.com/?q=Garden+West+Karachi" target="_blank" class="mt-6 px-6 py-2.5 rounded-full bg-gold-500/20 text-gold-300 text-xs uppercase tracking-wider font-semibold border border-gold-500/30 hover:bg-gold-500 hover:text-black transition-all">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-black text-center text-gray-500 text-xs border-t border-gray-900">
+        <p>&copy; 2026 ARSALAN ANSARI - JAAL TAILOR (Garden West, Karachi). All Rights Reserved.</p>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div id="bookingModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="glass-card max-w-md w-full rounded-3xl p-6 sm:p-8 relative border border-gold-500/30">
+            <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mx-auto mb-3">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+                <h3 class="font-cinzel text-2xl font-bold text-white">Book Your Order</h3>
+                <p id="modalServiceName" class="text-xs text-gold-300 font-medium mt-1">Simple Suit</p>
+            </div>
+
+            <form id="orderForm" onsubmit="sendWhatsAppOrder(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-gray-300 mb-1">Aap ka Naam (Name)</label>
+                    <input type="text" id="custName" required placeholder="Enter your name" class="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-gray-300 mb-1">Kitne Suits Hain? (Quantity)</label>
+                    <input type="number" id="custQty" min="1" value="1" required class="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-gray-300 mb-1">Additional Details / Instructions</label>
+                    <textarea id="custNotes" rows="3" placeholder="Piping style, lace preference, or urgent delivery date..." class="w-full bg-black/50 border border-gray-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold-500"></textarea>
+                </div>
+
+                <button type="submit" class="whatsapp-btn w-full py-3.5 rounded-xl text-white font-bold text-sm tracking-wider uppercase flex items-center justify-center gap-2 mt-4">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Send Order on WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Booking Modal Logic
+        let selectedService = '';
+
+        function openBookingModal(serviceName) {
+            selectedService = serviceName;
+            document.getElementById('modalServiceName').innerText = serviceName;
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.getElementById('bookingModal').classList.add('flex');
+        }
+
+        function closeBookingModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+            document.getElementById('bookingModal').classList.remove('flex');
+        }
+
+        function sendWhatsAppOrder(event) {
+            event.preventDefault();
+            const name = document.getElementById('custName').value;
+            const qty = document.getElementById('custQty').value;
+            const notes = document.getElementById('custNotes').value;
+
+            const text = `Assalam%20o%20Alaikum%20Arsalan%20Ansari%20Tailor!%0A%0A*New%20Order%20Inquiry*%0A• *Name:* ${encodeURIComponent(name)}%0A• *Service:* ${encodeURIComponent(selectedService)}%0A• *Quantity:* ${qty}%0A• *Details:* ${encodeURIComponent(notes || 'N/A')}%0A%0AFrom:%20Garden%20West,%20Karachi`;
+
+            window.open(`https://wa.me/923142387881?text=${text}`, '_blank');
+            closeBookingModal();
+        }
+    </script>
+</body>
+</html>
